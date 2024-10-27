@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+
+    <div class="container">
+        <header>
+            <h1>{{ name }}</h1>
+            <p>{{ tagline }}</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>{{ about }}</p>
+        </section>
+
+        <section>
+            <h2>Hobbies</h2>
+            <ul>
+                <li ng-repeat="hobby in hobbies">{{ hobby }}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Native Village/Town</h2>
+            <p>{{ village }}</p>
+        </section>
+
+        <section>
+            <h2>Family Members</h2>
+            <ul>
+                <li ng-repeat="member in family">{{ member }}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Schooling</h2>
+            <p>{{ schooling }}</p>
+        </section>
+
+        <section>
+            <h2>College Life</h2>
+            <p>{{ collegeLife }}</p>
+        </section>
+
+        <section>
+            <h2>Educational Qualifications</h2>
+            <ul>
+                <li ng-repeat="qualification in qualifications">{{ qualification }}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certificates/Rewards</h2>
+            <ul>
+                <li ng-repeat="reward in rewards">{{ reward }}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Valuable Contributions to Society</h2>
+            <p>{{ contributions }}</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 My Personal Webpage</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
