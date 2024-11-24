@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #e6f7ff, #fefefe);
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background: #0073e6;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #0073e6;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+}
+
+section p,
+section ul {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Page-Specific Styling */
+.home-section {
+  background: linear-gradient(135deg, #f0f8ff, #e6ffe6);
+  text-align: center;
+}
+
+.about-section {
+  background: linear-gradient(135deg, #ffe6e6, #fffbe6);
+}
+
+.education-section {
+  background: linear-gradient(135deg, #e6f7ff, #e6ffe6);
+}
+
+.hobbies-section {
+  background: linear-gradient(135deg, #fffbe6, #f0f8ff);
+}
+
+.family-section {
+  background: linear-gradient(135deg, #e6ffe6, #ffe6e6);
+}
+
+.contributions-section {
+  background: linear-gradient(135deg, #f0f8ff, #ffe6e6);
+}
+
+/* Footer Section */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
